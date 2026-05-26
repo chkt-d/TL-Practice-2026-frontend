@@ -3,7 +3,7 @@ import type { Currency } from '../../data/currencies';
 import { currencies } from '../../data/currencies';
 import { ConverterHeader } from '../ConverterHeader/ConverterHeader';
 import { CurrencyRow } from '../CurrencyRow/CurrencyRow';
-import { MoreAbout } from '../MoreAbout/MoreAbout';
+import { MoreAboutCurrencies } from '../MoreAboutCurrencies/MoreAboutCurrencies';
 
 import styles from './ConverterCard.module.scss';
 
@@ -38,7 +38,7 @@ export function ConverterCard({ fromCurrency, toCurrency }: ConverterCardProps) 
         </button>
       </div>
 
-      <MoreAbout fromCurrency={fromCurrency} toCurrency={toCurrency} />
+      <MoreAboutCurrencies fromCurrency={fromCurrency} toCurrency={toCurrency} />
     </section>
   );
 }
